@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Levels/SaferoomLevel.gd" type="Script" id=1]
+[ext_resource path="res://TechRocksSand.tres" type="TileSet" id=2]
+
+[node name="SaferoomLevel" type="StaticBody2D"]
+script = ExtResource( 1 )
+
+[node name="Front" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+collision_use_parent = true
+format = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="TileMap" parent="."]
+z_index = -15
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+collision_use_parent = true
+format = 1
+__meta__ = {
+"_edit_lock_": true
+}

@@ -1,0 +1,11 @@
+# Plugin Specific ignores
+default_env.tres
+
+scn/
+override.cfg
+
+# Godot-specific ignores
+
+# Mono-specific ignores
+.mono/
+data_*/
